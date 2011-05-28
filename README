@@ -18,3 +18,20 @@ gem install twitter
 gem install mongo
 
 
+Usage
+==============
+
+To run, change the USERNAME and PASSWORD to your Twitter username and password. Pick any tracking keywords you want, and add them to the @tracking_keywords array. 
+
+Open up a mongo shell and take a look at all the tweets you've collected! For sample data, I highly suggest "bieber" as a keyword.
+
+> db.tweets.count();
+2156
+
+Future Plans
+================
+Get keywords directly from a MongoDB collection
+Follow users from a MongoDB collection
+Backfill user and keyword data using the REST API when a new user or keyword gets added
+Handle errors/rate limits from the Twitter Streaming API
+Auto-recovery if the stream gets dropped/errors
