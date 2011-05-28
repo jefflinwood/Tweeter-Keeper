@@ -1,0 +1,20 @@
+Tweeter Keeper is built on top of other people's work - I didn't see any reason to reinvent the wheel.
+
+TweetStream gem - reads tweets off of Twitter's streaming API and provides a Ruby block with the tweets.
+
+Twitter gem - for use with the other Twitter API's - use to get followers for a user, user's tweet timeline, etc. We can use this to backfill in the history for users we follow on the streaming side. Some methods on this will require OAuth authentication
+
+MongoDB - NoSQL database that uses BSON (similar to JSON) for inserting and retrieving data, making it easy to dump data directly from Twitter without processing. 
+
+Mongo gem - Use the Mongo Ruby Driver directly, instead of an abstraction library
+
+Install
+=============
+
+Environment - requires Ruby and MongoDB.
+
+gem install tweetstream
+gem install twitter
+gem install mongo
+
+
