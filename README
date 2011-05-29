@@ -8,6 +8,8 @@ MongoDB - NoSQL database that uses BSON (similar to JSON) for inserting and retr
 
 Mongo gem - Use the Mongo Ruby Driver directly, instead of an abstraction library
 
+Yaml gem - Used for basic configuration tasks
+
 Install
 =============
 
@@ -16,12 +18,17 @@ Environment - requires Ruby and MongoDB.
 gem install tweetstream
 gem install twitter
 gem install mongo
+gem install yaml
 
 
 Usage
 ==============
 
-To run, change the USERNAME and PASSWORD to your Twitter username and password. Pick any tracking keywords you want, and add them to the @tracking_keywords array. 
+To run, open up config.yaml and change the USERNAME and PASSWORD to your Twitter account's username and password. 
+
+Pick any tracking keywords you want, and add them to the @tracking_keywords array. 
+
+This version has support for loading in one Twitter user's friends (the Twitter users they are following) and tracking their tweets as well - change the Twitter user's id from "jefflinwood" to your own or whomever. As long as the account isn't protected, you don't need the account's password or an OAuth authentication.
 
 Open up a mongo shell and take a look at all the tweets you've collected! For sample data, I highly suggest "bieber" as a keyword.
 
