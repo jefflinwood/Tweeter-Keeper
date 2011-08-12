@@ -15,16 +15,16 @@ Install
 
 Environment - requires Ruby and MongoDB.
 
-gem install tweetstream
-gem install twitter
-gem install mongo
-gem install yaml
+gem install bundle
+bundle install
 
 
 Usage
 ==============
 
 To run, open up config.yaml and change the USERNAME and PASSWORD to your Twitter account's username and password. 
+
+bundle exec ruby tweeter-keeper.rb
 
 Pick any tracking keywords you want, and add them to the @tracking_keywords array. 
 
