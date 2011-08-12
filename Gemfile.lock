@@ -1,0 +1,46 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    addressable (2.2.6)
+    bson (1.3.1)
+    bson_ext (1.3.1)
+    daemons (1.1.4)
+    eventmachine (0.12.10)
+    faraday (0.6.1)
+      addressable (~> 2.2.4)
+      multipart-post (~> 1.1.0)
+      rack (>= 1.1.0, < 2)
+    faraday_middleware (0.6.5)
+      faraday (~> 0.6.0)
+    hashie (1.0.0)
+    http_parser.rb (0.5.1)
+    mongo (1.3.1)
+      bson (>= 1.3.1)
+    multi_json (1.0.3)
+    multi_xml (0.2.2)
+    multipart-post (1.1.3)
+    rack (1.3.2)
+    simple_oauth (0.1.5)
+    tweetstream (1.0.4)
+      daemons
+      twitter-stream
+    twitter (1.6.0)
+      faraday (~> 0.6.1)
+      faraday_middleware (~> 0.6.3)
+      hashie (~> 1.0.0)
+      multi_json (~> 1.0.0)
+      multi_xml (~> 0.2.0)
+      simple_oauth (~> 0.1.5)
+    twitter-stream (0.1.14)
+      eventmachine (>= 0.12.8)
+      http_parser.rb (~> 0.5.1)
+      simple_oauth (~> 0.1.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bson_ext
+  mongo
+  tweetstream
+  twitter
