@@ -20,7 +20,7 @@ config = YAML.load_file('config.yaml')
   end
 
 #all tweets will be stored in a collection
-tweets = db.collection("app-tweets")
+tweets = db.collection("tweets")
 
 tracking_keywords = Array['aplusk'];
 follow_users = Twitter.friend_ids("jefflinwood").ids;
