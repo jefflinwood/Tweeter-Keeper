@@ -32,6 +32,8 @@ This version has support for loading in one Twitter user's friends (the Twitter 
 
 Open up a mongo shell and take a look at all the tweets you've collected! For sample data, I highly suggest "bieber" as a keyword.
 
+> use tweeterkeeper
+
 > db.tweets.count();
 2156
 
