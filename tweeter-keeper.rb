@@ -46,8 +46,6 @@ params = Hash.new;
 params[:follow] = follow_users;
 params[:track] = tracking_keywords;
 
-puts "calling filter"
-
 client.filter(params) do |status|
   puts "#{status.text} - #{status.created_at}"
   tweets.insert(status)
