@@ -10,7 +10,7 @@ Mongo gem - Use the Mongo Ruby Driver directly, instead of an abstraction librar
 
 Yaml gem - Used for basic configuration tasks
 
-Install
+# Install
 =============
 
 Environment - requires Ruby and MongoDB.
@@ -19,7 +19,7 @@ gem install bundle
 bundle install
 
 
-Usage
+# Usage
 ==============
 
 To run, open up config.yaml and change the USERNAME and PASSWORD to your Twitter account's username and password. 
@@ -37,7 +37,7 @@ Open up a mongo shell and take a look at all the tweets you've collected! For sa
 > db.tweets.count();
 2156
 
-Future Plans
+# Future Plans
 ================
 Get keywords directly from a MongoDB collection
 Follow users from a MongoDB collection
