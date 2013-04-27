@@ -25,8 +25,10 @@ tracking_keywords = Array['bieber'];
 follow_users = Twitter.friend_ids("jefflinwood").ids;
 
 TweetStream.configure do |c|
-  c.username = config['username']
-  c.password = config['password']
+  c.consumer_key       = 'change_me'
+  c.consumer_secret    = 'change_me'
+  c.oauth_token        = 'change_me'
+  c.oauth_token_secret = 'change_me'
   c.auth_method = :basic
   c.parser = :yajl
 end
